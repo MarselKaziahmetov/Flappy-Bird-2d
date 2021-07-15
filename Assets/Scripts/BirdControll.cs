@@ -6,6 +6,7 @@ public class BirdControll : MonoBehaviour
 {
     private Rigidbody2D _rigidbody;
 
+    public MenuManager _menuManager;
     [SerializeField] private float _jumpVelocity = 1;
 
     void Start()
@@ -24,5 +25,10 @@ public class BirdControll : MonoBehaviour
         {
             Jump();
         }    
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        _menuManager.GameOver();
     }
 }
