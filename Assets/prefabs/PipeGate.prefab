@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1402421128}
   - component: {fileID: 1402421129}
-  - component: {fileID: 1402421130}
+  - component: {fileID: 2357345633488900396}
   m_Layer: 0
   m_Name: ScoreAdder
   m_TagString: Untagged
@@ -58,7 +58,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.91035616, y: 2.1612244}
   m_EdgeRadius: 0
---- !u!114 &1402421130
+--- !u!114 &2357345633488900396
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
