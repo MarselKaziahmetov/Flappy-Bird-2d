@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+    [SerializeField] private AudioSource BackAudio;
+    [SerializeField] private AudioSource DeathAudio;
     [SerializeField] private GameObject GameOverCanvas;
 
     void Start()
@@ -16,6 +18,9 @@ public class MenuManager : MonoBehaviour
     {
         GameOverCanvas.SetActive(true);
         Time.timeScale = 0;
+
+        BackAudio.Pause();
+        DeathAudio.Play();
     }
 
     public void Replay()
